@@ -4,12 +4,12 @@
 {% block content %}
 <h1>About {{ company_name }}</h1>
 <p>Founded in {{ founded_year }}.</p>
-<p>{{ about_text }}</p>
+<p class="about-text">{{ about_text }}</p>
 
 <h2>Meet the Team</h2>
 <ul>
     {% for member in team_members %}
-        <li>{{ member.name }} — {{ member.role }}</li>
+        <li syle ="background-color:Green"><strong>{{ member.name }} — {{ member.role }}</strong></li>
     {% endfor %}
 </ul>
 {% endblock %}
