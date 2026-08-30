@@ -8,26 +8,26 @@ def preview_404(request):
 
 
 def home(request):
-    context = {
-        'company_name': 'ShopEasy Pvt. Ltd.',
-        'founded_year': 2021,
-        'about_text': "ShopEasy started in 2021 with a simple idea — online shopping should be "
-                      "easy, fast, and reliable, especially for people right here in Nepal. What "
-                      "began as a small project has grown into a platform offering everything from "
-                      "electronics and fashion to home essentials and books, all in one place. We "
-                      "work directly with trusted suppliers to make sure every product meets our "
-                      "quality standards before it reaches your doorstep. Our goal is simple: "
-                      "make online shopping something you can actually trust.",
-        'team_members': [
-            {'name': 'Amrit Sunar', 'role': 'Founder & CEO'},
-            {'name': 'Leo Wazi', 'role': 'Lead Developer'},
-            {'name': 'Shankar Sunar', 'role': 'Product Manager'},
-        ],
-    }
     return render(request,'shop/home.html')
 
 def about(request):
-    return render(request,'shop/about.html')
+    context = {
+            'company_name': 'ShopEasy Pvt. Ltd.',
+            'founded_year': 2026,
+            'about_text': "ShopEasy started in 2026 with a simple idea — online shopping should be "
+                          "easy, fast, and reliable, especially for people right here in Nepal. What "
+                          "began as a small project has grown into a platform offering everything from "
+                          "electronics and fashion to home essentials and books, all in one place. We "
+                          "work directly with trusted suppliers to make sure every product meets our "
+                          "quality standards before it reaches your doorstep. Our goal is simple: "
+                          "make online shopping something you can actually trust.",
+            'team_members': [
+                {'name': 'Amrit Sunar', 'role': 'Founder & CEO'},
+                {'name': 'Leo Wazi', 'role': 'Lead Developer'},
+                {'name': 'Shankar Sunar', 'role': 'Product Manager'},
+            ],
+        }
+    return render(request,'shop/about.html',context)
 
 def contact(request):
     if request.method =="POST":
