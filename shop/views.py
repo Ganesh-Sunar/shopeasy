@@ -2,7 +2,12 @@ from django.shortcuts import render,get_object_or_404,redirect
 from django.contrib import messages
 from .models import Product
 
-# Create your views here.
+
+"""
+This preview_404 function is only for testing purpose 
+we dont need to right these views for 404 page but need to 
+configure two settings debug = False and Allowed_host = ['127.0.0.1 ,'local_host]
+"""
 def preview_404(request):
     return render(request,'404.html')
 
