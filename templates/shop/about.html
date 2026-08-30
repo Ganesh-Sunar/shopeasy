@@ -2,12 +2,14 @@
 {% block title %}About - ShopEasy{% endblock %}
 
 {% block content %}
-<h1>About ShopEasy</h1>
-<p>ShopEasy started as a small internship project and grew into a full demo e-commerce platform.</p>
+<h1>About {{ company_name }}</h1>
+<p>Founded in {{ founded_year }}.</p>
+<p>{{ about_text }}</p>
 
 <h2>Meet the Team</h2>
 <ul>
-    <li>wuzgzing tewi — Founder & CEO</li>
-    <li>luli yanchung— Lead Developer</li>
+    {% for member in team_members %}
+        <li>{{ member.name }} — {{ member.role }}</li>
+    {% endfor %}
 </ul>
 {% endblock %}
