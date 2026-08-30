@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+{% block  title %}{{product.name}}-ShopEasy{% endblock  %}
+{% block content %}
+<a href="{%url 'product_list'%}">Back to product list</a>
+<h1>{{ product.name|title }}</h1>
+<p>Category: {{ product.get_category_display }}</p>
+<p>Rs. {{ product.price }}</p>
+<p>{{ product.description }}</p>
+
+#using if else statement 
+{% if product.in_stock %}
+    <p style="color: green;">In Stock: {{ product.stock }} units</p>
+{% else %}
+    <p style="color: red;">Out of Stock</p>
+{% endif %}
+
+<p>Listed on {{ product.created_at|date:"F j, Y" }}</p>
+{% endblock %}
