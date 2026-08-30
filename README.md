@@ -18,16 +18,18 @@ and URL naming.
 - Named URLs used throughout (`{% url 'product_detail' product.pk %}')
 - Templates organized under `templates/shop/`
 - ## Project Structure
-- internship/
-├── internship/ # Project settings
-├── shop/ # Main app (models, views, urls)
-├── templates/ # All HTML templates
-│ ├── base.html
-│ ├── 404.html
-│ ├── includes/ # navbar, footer
-│ └── shop/ # app specifc pages
-├── static/ # CSS, JS, images
+```
+internship/
+├── internship/          # Project settings
+├── shop/                 # Main app (models, views, urls)
+├── templates/             # All HTML templates
+│   ├── base.html
+│   ├── 404.html
+│   ├── includes/          # navbar, footer
+│   └── shop/               # app-specific pages
+├── static/                # CSS, JS, images
 └── manage.py
+​```
 
 ## Setup & Run
 
