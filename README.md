@@ -15,8 +15,8 @@ and URL naming.
 - Context data passed from views to templates
 - Template tags used: '{% if %}', '{% for %}', '{% block %}', '{% extends %}', '{% include %}', '{% url %}'
 - Template filters used: 'upper', 'title, 'truncatechars', 'date', 'pluralize`
-- Named URLs used throughout (`{% url 'product_detail' product.pk %}')
-- Templates organized under `templates/shop/`
+- Named URLs used throughout ('{% url 'product_detail' product.pk %}')
+- Templates organized under 'templates/shop/'
 - ## Project Structure
 ```
 internship/
@@ -52,7 +52,7 @@ python manage.py createsuperuser
 
 # Run server
 python manage.py runserver
-Visit `http://127.0.0.1:8000/
+Visit 'http://127.0.0.1:8000/'
 ## Screenshots
 
 See 'Week2_Screenshots.pdf' for screenshots of all pages.
