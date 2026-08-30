@@ -18,7 +18,7 @@ and URL naming.
 - Named URLs used throughout (`{% url 'product_detail' product.pk %}')
 - Templates organized under `templates/shop/`
 - ## Project Structure
-'''
+```
 internship/
 ├── internship/          # Project settings
 ├── shop/                 # Main app (models, views, urls)
@@ -29,8 +29,7 @@ internship/
 │   └── shop/               # app-specific pages
 ├── static/                # CSS, JS, images
 └── manage.py
-​'''
-
+​```
 ## Setup & Run
 
 bash
