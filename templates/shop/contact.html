@@ -4,8 +4,9 @@
 
 {% block content %}
 <h1>Contact Us</h1>
-<p><strong>Address:</strong> Kathmandu, Nepal</p>
-<p><strong>Email:</strong> support@shopeasy.example.com</p>
+<p><strong>Address:</strong> Gorkha, Nepal</p>
+<p><strong>Email:</strong>shopeasy@gmail.com</p>
+<p><strong>Phone:</strong>+05694233,9786746747</p>
 
 {% if messages %}
     {% for message in messages %}
@@ -13,7 +14,7 @@
     {% endfor %}
 {% endif %}
 
-<form method="post">
+<form method="post" class = "contact-form">
     {% csrf_token %}
     <label for="name">Name</label>
     <input type="text" id="name" name="name" required>
